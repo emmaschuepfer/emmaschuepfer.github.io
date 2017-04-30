@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<title>I'm Emma Schuepfer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+	a, footer {font-family:apercu;}
+
+	img {margin-bottom: 4px;}
+
+	@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+	@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+ 	 .prev, .next,.text {font-size: 11px}
+	}
+
+</style>
+<body>
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
+	</br></br></br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
+	</br>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+	</br>
+  <a href="/contact.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">contact</a>
+</nav>
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+	<div class="wider">
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHUEPFER</a>
+	</div>
+    	<!-- Float links to the right. Hide them on small screens -->
+    	<div class="right hide-small">
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top-2">portfolio</a>
+     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3">about</a>
+     	<a href="/contact.html" class="bar-item button text-light-grey hover-dark-grey animate-top-4 margin-right">contact</a>
+    </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
+      <i class="material-icons text-grey hover-grey" >menu</i>
+    </a>
+  </div>
+</div>
+
+
+
+<section id="section02" class="demo">
+	<a href="#section03"><span></span></a>
+</section>
+
+
+
+<div class="content margin-top;" style="font-family: apercu;">
+  <div id="section03" style="max-width:1200px" class=row-padding display-middle">
+	</br></br>
+  
+    <!-- Left Column -->
+    <div class="third">
+    
+      <div class="white text-grey wide-2 small">
+        <div class="display-container">
+      
+        </div>
+        <div class="container">
+          
+          <p></br></br></br>Illustration</p>
+	  <p>2. Semester</p>
+          <p>Consultig: Marco Wagner</p>
+          <br><br>
+        </div>
+      </div><br>
+    </div>
+
+    <!-- Right Column -->
+    <div class="twothird">
+        <div class="container wide-2 text-grey">
+          <p>URBAN</br></br> ist ein Risographie-Heft zum Thema Stadtleben.</p>
+        </div> 
+	<div class="container wide text-light-grey">
+          <p>- is a short risograph illustration booklet about city life.</p>
+        </div> 
+      </div>
+</div>
+</div>
+
+
+
+
+
+</br>
+
+
+</br>
+
+
+<div class="slideshow-container">
+
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow1.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow2.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow3.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow4.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow5.jpg" style="width:95%">
+</div>
+
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow6.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow7.jpg" style="width:95%">
+</div>
+
+<div class="mySlides fade center">
+  <img src="urbanslideshow8.jpg" style="width:95%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div class="display-container content wide" style="max-width:1500px;" id="home">
+ </br> </br> </br> </br> </br>
+</div>
+
+
+<footer class="center bar invisible wide padding-24">
+  <p><a class="hide-small"> Emma Schuepfer | </a>hello@emmaschuepfer.com</p>
+</footer>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+});
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+ for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>

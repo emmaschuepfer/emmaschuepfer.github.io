@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<title>I'm Emma Schuepfer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png.ico">
+<style>
+	a, footer {font-family:apercu};
+	body {background-color:fff;};
+	
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 500px) {
+ 	h3 {font-size: 11px}
+	}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar invisible wide padding-24" id="myNavbar">
+	<div class="wider">
+    	<a href="/index.htm" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHUEPFER</a>
+	</div>
+    	<!-- Float links to the right. Hide them on small screens -->
+    	<div class="right hide-small">
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top">portfolio</a>
+     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top">about</a>
+     	<a href="/contact.html" class="bar-item button text-light-grey hover-dark-grey animate-top margin-right">contact</a>
+    </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
+      <i class="material-icons text-grey hover-grey" >menu</i>
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block card-2 animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+  <a href="/contact.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">contact</a>
+</nav>
+
+ 
+</br></br></br></br></br><br/>
+
+
+
+<div class="content" style="max-width:1400px;">
+
+  <div class="row padding text-white large center">
+    <div class="col s1 margin-bottom hide-small"></div>	
+    <div class="col m3 margin-bottom animate-opacity">
+        <img src="emma.jpg" alt="emma" style="width:100%">
+    </div>
+   <div class="col s1 margin-bottom">
+    </div>
+    <div class="col m6 animate-opacity">
+      <div class="row-padding" style="margin:0 -16px">
+        <div class="margin-bottom margin-left padding-large">
+           <h3 style="text-align:left; font-family:apercu-light" class="display-middle text-grey wide-2"><br style="hide-medium"><br/><br style="hide-large"><br/>
+		<br style="hide-large"><br/><br style="hide-large"><br/><br style="hide-large"><br/>
+		 Nice to meet you! <br/><br/>  My name is Emma. I'm a communication 
+	design student at FH Würzburg and I´m looking forward to get in touch with you. </br> </br><a class="wide" style="font-family:apercu-light; font-size:16px"><a style="font-family:apercu-light; font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=Mail from Our Site">hello@emmaschuepfer.de</a></a> </h3><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<footer class="center bar invisible wide padding-24">
+  <p><a class="hide-small"> Emma Schuepfer | </a>hello@emmaschuepfer.de</p>
+</footer>
+
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
