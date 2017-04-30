@@ -1,1 +1,176 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<title>I'm Emma Schüpfer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<style>
+	a, footer {font-family:apercu};
+	.container @media screen and (max-width: 800px) {	
+	padding-bottom: 10x;
+}
+
+
+
+</style>
+<body>
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
+	</br></br></br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
+  <a href="main.htm" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
+	</br>
+  <a href="about.htm" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+	</br>
+  <a href="contact.htm" onclick="w3_close()" class="bar-item button center text-grey hover-grey">contact</a>
+</nav>
+
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+	<div class="wider">
+    	<a href="main.htm" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+	</div>
+    	<!-- Float links to the right. Hide them on small screens -->
+    	<div class="right hide-small">
+    	<a href="#portfolio" class="bar-item button text-grey hover-grey animate-top-2">portfolio</a>
+     	<a href="about.htm" class="bar-item button text-light-grey hover-dark-grey animate-top-3">about</a>
+     	<a href="#contact" class="bar-item button text-light-grey hover-dark-grey animate-top-4 margin-right">contact</a>
+    </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
+      <i class="material-icons text-grey hover-grey" >menu</i>
+    </a>
+  </div>
+</div>
+
+
+
+</br></br></br></br><id="portfolio">
+
+ 
+<div class="row-padding text-dark-grey big wide">
+    <div class="twothird container">
+    
+	<div class="display-container">
+		<a href="interaktive.htm"> 
+		<img alt="gun violence" src="interaktive.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover">US GUN VIOLENCE</br><span class="small">Interactive Design</span> </span>
+		</a>
+		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+	</div>
+    
+     </div>
+    	<div class="third container">
+      
+	<div class="display-container">
+	<a href="urban.htm"> 
+	<img alt="oneironaut" src="urban.jpg" style="width:100%">
+	<span class="display-topmiddle display-hover">URBAN</br><span class="small"> Illustration </span> </span>
+	</a>
+	</div>
+     </div>
+</div>
+
+ 
+<div class="row-padding text-dark-grey big wide">
+    <div class="third container">
+    
+	<div class="display-container">
+		<a href="himmelstadt.htm"> 
+		<img alt="urban" src="foto.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover">HIMMELSTADT</br><span class="small"> Photography </span> </span>
+		</a>
+		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+	</div>
+     
+     </div>
+    	<div class="twothird container">
+         
+	   <div class="display-container">
+		<a href="oneironaut.htm"> 
+		<img alt="oneironaut" src="oneironaut3.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover">ONEIRONAUT</br><span class="small">Editorial Design</span> </span>
+		
+		</a>
+	   </div>
+   	
+	</div>
+</div>
+
+<div class="row-padding text-dark-grey big wide">
+    <div  class="third container">
+      
+	<div class="display-container">
+	   <div class="display-container">
+		<a href="woerter.htm"> 
+		<img alt="oneironaut" src="woerter.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover hide-small">WÖRTER;</br><span class="small">Typography</span> </span>
+		</a>
+		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+	   </div>
+	</div>
+      
+     </div>
+	<div class="third container">
+      
+	<div class="display-container">
+		<a href="cerebrum.htm"> 
+		<img alt="cerebrum" src="foto.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover hide-small">CEREBRUM</br><span class="small">Interactive Design</span> </span>
+		</a>
+		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+	</div>
+     
+     </div>
+    	<div class="third container">
+     
+	<div class="display-container">
+		<a href="foto.htm"> 
+		<img alt="urban" src="foto.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover">US gun violence</span>
+		</a>
+	</div>
+    
+     </div>
+</div>
+
+
+
+
+<footer class="center bar invisible wide padding-24">
+  <p><a class="hide-small"> Emma Schuepfer | </a>hello@emmaschuepfer.com</p>
+</footer>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+
+</script>
+
+
+</body>
+</html>
