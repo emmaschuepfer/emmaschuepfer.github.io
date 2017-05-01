@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Abel|Didact+Gothic|Hind:300,400|Jaldi|Quicksand" rel="stylesheet"> 
 <style>
-	a, footer {font-family:apercu};
+	a, footer {font-family:Hind};
 	body {background-color:fff;};
 	
 	/* On smaller screens, decrease text size */
@@ -19,34 +20,34 @@
 </style>
 <body>
 
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
+	</br></br></br></br></br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
+</br></br>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
+	</br></br>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+</nav>
+
+
+
 <!-- Navbar (sit on top) -->
 <div class="top">
-  <div class="bar invisible wide padding-24" id="myNavbar">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
-    	<a href="/index.htm" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHUEPFER</a>
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top">portfolio</a>
-     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top">about</a>
-     	<a href="/contact.html" class="bar-item button text-light-grey hover-dark-grey animate-top margin-right">contact</a>
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top-2">portfolio</a>
+     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
       <i class="material-icons text-grey hover-grey" >menu</i>
     </a>
   </div>
 </div>
-
-
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="sidebar bar-block card-2 animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
-  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
-  <a href="/contact.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">contact</a>
-</nav>
-
  
 </br></br></br></br></br><br/>
 
@@ -57,17 +58,17 @@
   <div class="row padding text-white large center">
     <div class="col s1 margin-bottom hide-small"></div>	
     <div class="col m3 margin-bottom animate-opacity">
-        <img src="emma.jpg" alt="emma" style="width:100%">
+        <img src="/img/about_emma.jpg" alt="emma" style="width:100%">
     </div>
    <div class="col s1 margin-bottom">
     </div>
     <div class="col m6 animate-opacity">
       <div class="row-padding" style="margin:0 -16px">
         <div class="margin-bottom margin-left padding-large">
-           <h3 style="text-align:left; font-family:apercu; font-weight:100" class="display-middle text-grey wide-2"><br style="hide-medium"><br/><br style="hide-large"><br/>
+           <h3 style="text-align:left; font-family:Hind; font-weight:100" class="display-middle text-grey wide-2"><br style="hide-medium"><br/><br style="hide-large"><br/>
 		<br style="hide-large"><br/><br style="hide-large"><br/><br style="hide-large"><br/>
 		 Nice to meet you! <br/><br/>  My name is Emma. I'm a communication 
-	design student at FH Würzburg and I´m looking forward to get in touch with you. </br> </br><a class="wide" style="font-family:apercu-light; font-size:16px"><a style="font-family:apercu-light; font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=Mail from Our Site">hello@emmaschuepfer.de</a></a> </h3><br>
+	design student at FH Würzburg and I´m looking forward to get in touch with you. </br> </br><a class="wide" style="font-family:Hind-light; font-size:16px"><a style="font-family:Hind; font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></a> </h3><br>
         </div>
       </div>
     </div>
@@ -76,7 +77,7 @@
 
 
 <footer class="center bar invisible wide padding-24">
-  <p><a class="hide-small"> Emma Schuepfer | </a>hello@emmaschuepfer.de</p>
+  <p><a class="hide-small"> Emma Schüpfer | </a><a class="wide" style="font-family:Hind-light; font-size:16px"><a href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
 </footer>
 
 
