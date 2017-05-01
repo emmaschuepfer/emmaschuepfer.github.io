@@ -238,7 +238,7 @@ section::after {position: absolute;bottom: 0;left: 0;content: '';width: 100%;hei
 
 #section04 { background: url(oneironauttitel.jpg) center center / cover no-repeat;}
 #section02 { background: url(urban_titel.jpg) center center / cover no-repeat;}
-#section05 { background: url(foto3.jpg) center center / cover no-repeat;}
+#section05 { background: url(/img/himmelstadt_banner.jpg) center center / cover no-repeat;}
 #section06 { background: url(woertertitel.jpg) center center / cover no-repeat;}
 #section07 { background: url(cerebrum2.jpg) center center / cover no-repeat;}
 
