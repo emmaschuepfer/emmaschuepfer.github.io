@@ -1,24 +1,27 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>I'm Emma Schuepfer</title>
-<meta charset="UTF-8">
+<title>I'm Emma Schüpfer</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Abel|Didact+Gothic|Hind:300,400|Jaldi|Quicksand" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <style>
 	a, footer {font-family:Hind};
-	body {background-color:fff;};
-	
-	/* On smaller screens, decrease text size */
-	@media only screen and (max-width: 500px) {
- 	h3 {font-size: 11px}
-	}
+	.container @media screen and (max-width: 800px) {	
+	padding-bottom: 10x;
+}
+
+
 
 </style>
 <body>
+
+
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
@@ -50,49 +53,16 @@
 </div>
 
 
-<div class="content" style="max-width:1400px;">
 
-<div class="row padding text-white large center">
- <div class="col s1 margin-bottom"></div>	
-    <div class="col m3 margin-bottom animate-opacity">
-	<a> </br></a>
-    </div>
- </div>
-</div>
-
-<div class="row padding text-white large center hide-small">
- <div class="col s1 margin-bottom"></div>	
-    <div class="col m3 margin-bottom animate-opacity">
-	<a></a>
-    </div>
- </div>
-</div>
-
-  <div class="row padding text-white large center">
-    <div class="col s1 margin-bottom hide-small"></div>	
-    <div class="col m3 margin-bottom animate-opacity">
-        <img src="/img/about_emma.jpg" alt="emma" style="width:100%">
-    </div>
-   <div class="col s1 margin-bottom">
-    </div>
-    <div class="col m6 animate-opacity">
-      <div class="row-padding" style="margin:0 -16px">
-        <div class="margin-bottom margin-left padding-large">
-	   <a> </br></br></br></br></br></br></br></a>
-           <h3 style="text-align:left; font-family:Hind; font-weight:100" class="display-middle text-grey wide-2">
-		 Nice to meet you! <br/><br/>  My name is Emma. I'm a communication 
-	design student at FH Würzburg and I´m looking forward to get in touch with you. </br> </br><a class="wide" style="font-family:Hind-light; font-size:16px"><a style="font-family:Hind; font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></a> </h3><br>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+</br></br></br></br><id="portfolio">
 
 
-<footer class="right bar invisible wide-2 padding-24">
-  <p class="right padding right small"> © 2017 Emma Schüpfer | <a href="/impressum.html"> IMPRESSUM</a></p>
+
+
+
+<footer class="center bar invisible wide padding-24">
+  <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" style="font-family:Hind-light; font-size:16px"><a href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
 </footer>
-
 
 <script>
 // Toggle between showing and hiding the sidebar when clicking the menu icon
@@ -110,6 +80,9 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+
+
 </script>
 
 
