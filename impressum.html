@@ -17,6 +17,12 @@
 }
 
 
+	.bottomUp {
+  	position: fixed;
+  	display: none;
+  	z-index: 1;
+}
+
 
 </style>
 <body>
@@ -24,13 +30,11 @@
 
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
-	</br></br></br></br></br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
-</br></br>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">portfolio</a>
+<nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
+</br></br></br></br></br></br></br></br>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-6">work</a>
 	</br></br>
-  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-5">about</a>
 </nav>
 
 
@@ -43,17 +47,37 @@
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top-2">portfolio</a>
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top-2">work</a>
      	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
     </div>
-    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
-      <i class="material-icons text-grey hover-grey" >menu</i>
-    </a>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
+      <div class="burgermenu" style="margin-top:10px">
+  	<span class="burgerspan1"></span>
+  	<span class="burgerspan2"></span>
+  	<span class="burgerspan3"></span>
+    	</div>
+	</a>
   </div>
 </div>
 
 
- <div class="container content padding wide-2 text- grey" style="max-width:1000px">
+<!-- NavUp (sit on bottom) -->
+<div class="bottom bottomUp" style="padding-right:20px">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+  <section id="backtotop" class="demo2">
+    	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
+</section>
+ </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
+      <div class="burgermenu" style="margin-top:10px">
+    	</div>
+	</a>
+  </div>
+</div>
+
+
+
+ <div id="section03" class="container content padding wide-2 text-dark-grey" style="max-width:1000px">
      <p><h3></br></br></br>Impressum</h3> <h4>Angaben gem&auml;&szlig; &sect; 5 TMG:</h4> <p>Emma Sch&uuml;pfer<br /> Waldstra&szlig;e 20<br /> 97267 Himmelstadt </p> <h3>Kontakt:</h3> <table><tr><td>E-Mail:</td> <td>hello@emmaschuepfer.de</td> </tr></table> <h3>Haftung f&uuml;r Inhalte</h3> <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.</p> <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwer	den von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <h3>Haftung f&uuml;r Links</h3> <p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p> <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <h3>Urheberrecht</h3> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. 	Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen 
 	Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p><p>&nbsp;</p> <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</br></br></br></a></p>
 	</p></div>
@@ -80,6 +104,25 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
+function myFunction(x) {
+    x.classList.toggle("burgerchange");
+}
+
+$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 500) {
+    $('.bottomUp').fadeIn();
+  } else {
+    $('.bottomUp').fadeOut();
+  }
+});
 
 
 </script>

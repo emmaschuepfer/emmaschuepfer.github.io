@@ -20,13 +20,12 @@ section h1 {
 	position: absolute;
 	top: 30%;
 	left: 35%;
-	z-index: 2;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: darkblue;
+	color: darkgrey;
 	text-align: center;
 	white-space: nowrap;
-	font-family: Baskerville;
+	font-family: Montserrat;
 	font-size: 80px;
 }
 
@@ -53,25 +52,36 @@ html, body
   margin: 0;
 }
 
+
+.bottomUp {
+  position: fixed;
+  display: none;
+  z-index: 1;
+}
+
+
+.hideNavbar {
+  position: fixed;
+  z-index: 1;
+}
+
 </style>
 <body>
 
 
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="sidebar bar-block card-2 animate-top-2 wide hide-medium hide-large" style="display:none;" id="mySidebar">
-	</br></br></br></br></br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button center large text-grey hover-grey ">x</a>
-</br></br>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">work</a>
+<nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
+</br></br></br></br></br></br></br></br>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-6">work</a>
 	</br></br>
-  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey">about</a>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-5">about</a>
 </nav>
 
 
 
 <!-- Navbar (sit on top) -->
-<div class="top">
+<div class="top hideNavbar hide-medium hide-large">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
     	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
@@ -81,15 +91,64 @@ html, body
     	<a href="#section03" class="bar-item button text-grey hover-grey animate-top-2">work</a>
      	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
     </div>
-    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right" onclick="w3_open()">
-      <i class="material-icons text-grey hover-grey" >menu</i>
-    </a>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
+      <div class="burgermenu" style="margin-top:10px">
+  	<span class="burgerspan1"></span>
+  	<span class="burgerspan2"></span>
+  	<span class="burgerspan3"></span>
+    	</div>
+	</a>
+  </div>
+</div>
+
+
+<div class="top hide-small">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+	<div class="wider">
+    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+	</div>
+    	<!-- Float links to the right. Hide them on small screens -->
+    	<div class="right hide-small">
+    	<a href="#section03" class="bar-item button text-grey hover-grey animate-top-2">work</a>
+     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
+    </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
+      <div class="burgermenu" style="margin-top:10px">
+  	<span class="burgerspan1"></span>
+  	<span class="burgerspan2"></span>
+  	<span class="burgerspan3"></span>
+    	</div>
+	</a>
+  </div>
+</div>
+
+
+<section id="section01" class="demo">
+	<a href="#section03"><span></span></a>
+</section>
+
+
+
+
+<!-- NavUp (sit on bottom) -->
+<div class="bottom bottomUp" style="padding-right:20px">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+  <section id="backtotop" class="demo2">
+    	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
+</section>
+ </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
+      <div class="burgermenu" style="margin-top:10px">
+    	</div>
+	</a>
   </div>
 </div>
 
 
 
-<div id="section03"> </br></br></br></br></div>
+
+
+<div id="section03"> </br> </br> </br></br></div>
 
 
 
@@ -118,6 +177,9 @@ html, body
      </div>
 </div>
 
+
+
+
  
 <div class="row-padding text-dark-grey big wide">
     <div class="third container">
@@ -144,8 +206,9 @@ html, body
 	</div>
 </div>
 
-<div class="row-padding text-dark-grey big wide" >
-    <div  class="third container">
+<div class="row-padding text-dark-grey big wide">
+	<div  class="third container">    
+
       
 	<div class="display-container">
 	   <div class="display-container">
@@ -167,18 +230,19 @@ html, body
 		</a>
 		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
 	</div>
-     
+
      </div>
     	<div class="third container">
      
 	<div class="display-container">
-		<a href="foto.htm"> 
+		<a href="index - Kopie.html"> 
 		<img alt="neu" src="-" style="width:100%">
 		<span class="display-topmiddle display-hover">neu</span>
 		</a>
 	</div>
     
      </div>
+</div>
 </div>
 
 </br></br>
@@ -238,7 +302,30 @@ $(document).ready(function(){
   
 });
 
+function myFunction(x) {
+    x.classList.toggle("burgerchange");
+}
 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.bottomUp').fadeIn();
+  } else {
+    $('.bottomUp').fadeOut();
+  }
+});
+
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 500) {
+    $('.hideNavbar').fadeOut();
+  } else {
+    $('.hideNavbar').fadeIn();
+  }
+});
 
 
 </script>
