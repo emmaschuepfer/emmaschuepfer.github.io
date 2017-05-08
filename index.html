@@ -7,26 +7,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Baskerville|Montserrat|Vollkorn|EB+Garamond" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <style>
-	a, footer {font-family:Source Sans Pro};
+	
+	a, footer, body {font-family: Roboto};
 	.container @media screen and (max-width: 800px) {	
 	padding-bottom: 10x;
 }
 
 section h1 {
 	position: absolute;
-	top: 30%;
-	left: 35%;
+	top: 40%;
+	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: darkgrey;
 	text-align: center;
 	white-space: nowrap;
-	font-family: Montserrat;
-	font-size: 80px;
+	font-size: 40px;
+	color: white;
+	font-weight: 300;
 }
 
 section h2 {
@@ -44,6 +45,15 @@ section h2 {
 }
 
 
+@font-face {
+    font-family: "moderat";
+    src: url("Moderat-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "moderat-bold";
+    src: url("Moderat-Bold.woff") format('woff');
+}
 
 
 html, body
@@ -73,9 +83,9 @@ html, body
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
 </br></br></br></br></br></br></br></br>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-6">work</a>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-6" style="font-size:32px">work</a>
 	</br></br>
-  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-5">about</a>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-5" style="font-size:32px">about</a>
 </nav>
 
 
@@ -84,12 +94,12 @@ html, body
 <div class="top hideNavbar hide-medium hide-large">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="#section03" class="bar-item button text-grey hover-grey animate-top-2">work</a>
-     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
+    	<a href="#section03" class="bar-item button text-dark-grey hover-grey animate-top-2">work</a>
+     	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
@@ -105,12 +115,12 @@ html, body
 <div class="top hide-small">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left" style="font-family:roboto; font-weight:400;">EMMA SCHÜPFER</a>
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="#section03" class="bar-item button text-grey hover-grey animate-top-2">work</a>
-     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
+    	<a href="#section03" class="bar-item button text-dark-grey hover-grey animate-top-2" style="font-weight:300;">work</a>
+     	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right" style="font-weight:300;">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
@@ -124,6 +134,7 @@ html, body
 
 
 <section id="section01" class="demo">
+	<h1 style ="wide-2">Welcome!</h1>
 	<a href="#section03"><span></span></a>
 </section>
 
@@ -152,7 +163,6 @@ html, body
 
 
 
-
  
 <div class="row-padding text-dark-grey big wide">
     <div class="twothird container">
@@ -160,7 +170,7 @@ html, body
 	<div class="display-container">
 		<a href="/projects/gunviolence.html"> 
 		<img alt="gun violence" src="/img/gunviolence_preview.jpg" style="width:100%">
-		<span class="display-topmiddle display-hover">GUN VIOLENCE</br><span class="small">Interactive Design</span> </span>
+		<span class="display-topmiddle display-hover" >GUN VIOLENCE</br><span class="small">Interactive Design</span> </span>
 		</a>
 		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
 	</div>
@@ -223,7 +233,7 @@ html, body
      </div>
 	<div class="third container">
       
-	<div class="display-container">
+	<div class="display-container" >
 		<a href="/projects/cerebrum.html"> 
 		<img alt="cerebrum" src="/img/cerebrum_preview.jpg" style="width:100%">
 		<span class="display-topmiddle display-hover">CEREBRUM</br><span class="small">Interactive Design</span> </span>
@@ -245,11 +255,12 @@ html, body
 </div>
 </div>
 
+
 </br></br>
 
 
-<footer class="center bar invisible wide padding-24">
- <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" style="font-family:Source Sans Pro; font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
+<footer class="center bar invisible wide padding-24 text-dark-grey" style="font-weight:300">
+ <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" style="font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
 </footer>
 
 <script>
@@ -320,7 +331,7 @@ $(document).scroll(function() {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 500) {
+  if (y > 600) {
     $('.hideNavbar').fadeOut();
   } else {
     $('.hideNavbar').fadeIn();

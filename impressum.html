@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Abel|Didact+Gothic|Hind:300,400|Jaldi|Quicksand" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&amp;subset=latin-ext" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <style>
-	a, body, footer {font-family:Hind};
+	a, body, footer {font-family:Roboto};
 	.container @media screen and (max-width: 800px) {	
 	padding-bottom: 10x;
 }
@@ -32,23 +32,23 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
 </br></br></br></br></br></br></br></br>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-6">work</a>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-6 big">work</a>
 	</br></br>
-  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-grey hover-grey animate-top-5">about</a>
+  <a href="/about.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-5 big">about</a>
 </nav>
 
 
 
 <!-- Navbar (sit on top) -->
-<div class="top">
+<div class="top hideNavbar hide-medium hide-large">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="/index.html" class="bar-item button text-grey hover-grey animate-top-2">work</a>
-     	<a href="/about.html" class="bar-item button text-light-grey hover-dark-grey animate-top-3 margin-right">about</a>
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top-2">work</a>
+     	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
@@ -61,19 +61,26 @@
 </div>
 
 
-<!-- NavUp (sit on bottom) -->
-<div class="bottom bottomUp" style="padding-right:20px">
+<div class="top hide-small">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
-  <section id="backtotop" class="demo2">
-    	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
-</section>
- </div>
-    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
+	<div class="wider">
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left" style="font-family:roboto; font-weight:400;">EMMA SCHÜPFER</a>
+	</div>
+    	<!-- Float links to the right. Hide them on small screens -->
+    	<div class="right hide-small">
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top-2" style="font-weight:300;">work</a>
+     	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right" style="font-weight:300;">about</a>
+    </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
+  	<span class="burgerspan1"></span>
+  	<span class="burgerspan2"></span>
+  	<span class="burgerspan3"></span>
     	</div>
 	</a>
   </div>
 </div>
+
 
 
 
@@ -83,9 +90,6 @@
 	</p></div>
 
 
-<footer class="center bar invisible wide padding-24">
-  <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" style="font-family:Hind-light; font-size:16px"><a href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
-</footer>
 
 <script>
 // Toggle between showing and hiding the sidebar when clicking the menu icon
