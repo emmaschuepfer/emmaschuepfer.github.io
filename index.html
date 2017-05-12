@@ -17,31 +17,38 @@
 	padding-bottom: 10x;
 }
 
-section h1 {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-	white-space: nowrap;
-	font-size: 40px;
-	color: white;
-	font-weight: 300;
+
+.word{
+  display: flex!important;
+  margin: auto!important;
+  font: 700 normal 4em/1.5 'Roboto',sans-serif;
+  color: white;
 }
 
-section h2 {
-	position: absolute;
-	top: 50%;
-	left: 40%;
-	z-index: 2;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: darkblue;
-	text-align: left;
-	white-space: nowrap;
-	font-family: Montserrat;
-	font-size: 16px;
+#welcome {display:flex!important; height:80%;}
+
+
+@media (min-width: 1300px) {
+.projects {max-width: 75%;}
+.line {max-width: 72%;}
+.mytext {max-width: 72%;}
+}
+
+
+@media (max-width: 1299px) {
+.mytext {max-width: 92%;}
+}
+
+
+@media (max-width: 580px) {
+#section01 { background: url(/img/emma_banner.jpg) center center / cover no-repeat; border: 32px solid white; border-top: 64px solid white;border-bottom: none;}
+.word {font-size: 48px; top: 48%!important;}
+}
+
+@media (min-width: 581px) {
+.projectsimg {margin-bottom:11px;}
+#section01 { background: url(/img/index_banner_1.jpg) center center / cover no-repeat;  border: 32px solid white; border-top: 64px solid white;border-bottom: none;}
+
 }
 
 
@@ -49,31 +56,26 @@ section h2 {
     font-family: "moderat";
     src: url("Moderat-Regular.woff") format('woff');
 }
-
 @font-face {
     font-family: "moderat-bold";
     src: url("Moderat-Bold.woff") format('woff');
 }
-
-
 html, body
 {
   height: 100%;
   margin: 0;
 }
-
-
 .bottomUp {
   position: fixed;
   display: none;
   z-index: 1;
 }
-
-
 .hideNavbar {
   position: fixed;
   z-index: 1;
 }
+
+
 
 </style>
 <body>
@@ -83,22 +85,21 @@ html, body
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
 </br></br></br></br></br></br></br></br>
-  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-6" style="font-size:32px">work</a>
+  <a href="/index.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-6" style="font-size:32px;">work</a>
 	</br></br>
   <a href="/about.html" onclick="w3_close()" class="bar-item button center text-dark-grey hover-grey animate-top-5" style="font-size:32px">about</a>
 </nav>
-
 
 
 <!-- Navbar (sit on top) -->
 <div class="top hideNavbar hide-medium hide-large">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
-    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
+    	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left" style="font-family:roboto; font-weight:400;">EMMA SCHÜPFER</a>
 	</div>
     	<!-- Float links to the right. Hide them on small screens -->
     	<div class="right hide-small">
-    	<a href="#section03" class="bar-item button text-dark-grey hover-grey animate-top-2">work</a>
+    	<a href="#section03" class="bar-item button text-dark-grey hover-grey animate-top-2" >work</a>
      	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
@@ -133,12 +134,10 @@ html, body
 </div>
 
 
-<section id="section01" class="demo">
-	<h1 style ="wide-2">Welcome!</h1>
+<section id="section01"class=" demo">
+	<div id="welcome" style="display:flex!important;"><div class="word"></div></div>
 	<a href="#section03"><span></span></a>
 </section>
-
-
 
 
 <!-- NavUp (sit on bottom) -->
@@ -154,25 +153,30 @@ html, body
 	</a>
   </div>
 </div>
-
-
-
-
-
-<div id="section03"> </br> </br> </br></br></div>
-
-
-
+<div id="section03"> </br> </br> </br></br></br></div>
  
+
+<div class="text-dark-grey padding wide-2 line" style="margin: auto; font-size: 20px; font-weight:300;" >My name is Emma. I'm a communication design student and this is my portfolio. Have a look!</div>
+
+
+<div class="mytext" style="height:2px;margin-top:40px;margin-bottom:50px; margin: auto; background-color:grey;"></div>
+
+
+
+
+<div></br></br></br></br></div>
+
+
+<div class="projects" style="margin:auto;">
 <div class="row-padding text-dark-grey big wide">
     <div class="twothird container">
     
-	<div class="display-container">
+	<div class="display-container" style="padding right: 5px;">
 		<a href="/projects/gunviolence.html"> 
-		<img alt="gun violence" src="/img/gunviolence_preview.jpg" style="width:100%">
+		<img class="padding-medium" alt="gun violence" src="/img/gunviolence_preview.jpg" style="width:100%;">
 		<span class="display-topmiddle display-hover" >GUN VIOLENCE</br><span class="small">Interactive Design</span> </span>
 		</a>
-		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+		<div class ="projectsimg"></div>
 	</div>
     
      </div>
@@ -180,26 +184,21 @@ html, body
       
 	<div class="display-container">
 	<a href="/projects/urban.html"> 
-	<img alt="urban" src="/img/urban_preview.jpg" style="width:100%">
+	<img class="padding-medium" alt="urban" src="/img/urban_preview.jpg" style="width:100%">
 	<span class="display-topmiddle display-hover">URBAN</br><span class="small"> Illustration </span> </span>
 	</a>
 	</div>
      </div>
 </div>
-
-
-
-
- 
 <div class="row-padding text-dark-grey big wide">
     <div class="third container">
     
 	<div class="display-container">
 		<a href="/projects/himmelstadt.html"> 
-		<img alt="himmelstadt" src="/img/himmelstadt_preview.jpg" style="width:100%">
+		<img class="padding-medium" alt="himmelstadt" src="/img/himmelstadt_preview.jpg" style="width:100%">
 		<span class="display-topmiddle display-hover">HIMMELSTADT</br><span class="small"> Photography </span> </span>
 		</a>
-		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
+		<div class ="projectsimg"></div>
 	</div>
      
      </div>
@@ -207,27 +206,25 @@ html, body
          
 	   <div class="display-container">
 		<a href="/projects/oneironaut.html"> 
-		<img alt="oneironaut" src="/img/oneironaut_preview.jpg" style="width:100%">
+		<img class="padding-medium" alt="oneironaut" src="/img/oneironaut_preview.jpg" style="width:100%">
 		<span class="display-topmiddle display-hover">ONEIRONAUT</br><span class="small">Editorial Design</span> </span>
-		
+		<div class ="projectsimg"></div>
 		</a>
 	   </div>
    	
 	</div>
 </div>
-
 <div class="row-padding text-dark-grey big wide">
 	<div  class="third container">    
-
       
 	<div class="display-container">
 	   <div class="display-container">
 		<a href="/projects/woerter.html"> 
-		<img alt="woerter;" src="/img/woerter_preview.jpg" style="width:100%">
+		<img class="padding-medium" alt="woerter;" src="/img/woerter_preview.jpg" style="width:100%">
 		<span class="display-topmiddle display-hover">WÖRTER;</br><span class="small">Typography</span> </span>
 		</a>
-		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
 	   </div>
+		<div class ="projectsimg"></div>
 	</div>
       
      </div>
@@ -235,18 +232,15 @@ html, body
       
 	<div class="display-container" >
 		<a href="/projects/cerebrum.html"> 
-		<img alt="cerebrum" src="/img/cerebrum_preview.jpg" style="width:100%">
+		<img class="padding-medium" alt="cerebrum" src="/img/cerebrum_preview.jpg" style="width:100%">
 		<span class="display-topmiddle display-hover">CEREBRUM</br><span class="small">Interactive Design</span> </span>
-		</a>
-		<div style="margin-bottom:8px" class="hide-medium; hide-large;"></div>
 	</div>
-
      </div>
     	<div class="third container">
      
 	<div class="display-container">
 		<a href="index - Kopie.html"> 
-		<img alt="neu" src="-" style="width:100%">
+		<img class="padding-medium" alt="neu" src="-" style="width:100%">
 		<span class="display-topmiddle display-hover">neu</span>
 		</a>
 	</div>
@@ -254,6 +248,7 @@ html, body
      </div>
 </div>
 </div>
+
 
 
 </br></br>
@@ -337,6 +332,83 @@ $(document).scroll(function() {
     $('.hideNavbar').fadeIn();
   }
 });
+
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.hideMe').fadeOut();
+  } else {
+    $('.hideMe').fadeIn();
+  }
+});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.showMe').fadeIn();
+  } else {
+    $('.showMe').fadeOut();
+  }
+});
+
+
+
+var
+  words = ['hey there','hallo ','grüezi','hola','salut'],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 10,
+  speed = 100;
+
+var wordflick = function(){
+  setInterval(function(){
+      if (forwards) {
+        if(offset >= words[i].length){
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      }
+      else {
+         if(offset == 0){
+            forwards = true;
+            i++;
+            offset = 0;
+            if(i >= len){
+              i=0;
+            } 
+         }
+      }
+      part = words[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        }
+        else {
+          offset--;
+        }
+      }
+    	$('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function(){
+  wordflick();
+});
+
+
+
+
+!function(t){"use strict";var a=t("[data-slides]"),ni=0,s=a.data("slides"),e=s.length,n=function(){if(ni>=a.length){ni=0}else{ni++};a.css("background-image",'url("'+s[ni]+'")').show(0,function(){setTimeout(n,5e3)})};n()}(jQuery);
+
 
 
 </script>
