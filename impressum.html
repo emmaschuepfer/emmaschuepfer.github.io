@@ -82,6 +82,19 @@
 </div>
 
 
+<!-- NavUp (sit on bottom) -->
+<div class="bottom bottomUp" style="padding-right:20px">
+  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+  <section id="backtotop" class="demo2">
+    	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
+</section>
+ </div>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
+      <div class="burgermenu" style="margin-top:10px">
+    	</div>
+	</a>
+  </div>
+</div>
 
 
  <div id="section03" class="container content padding wide-2 text-dark-grey" style="max-width:1000px">
@@ -108,9 +121,8 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
-function myFunction(x) {
-    x.classList.toggle("burgerchange");
-}
+
+
 
 $(function() {
 	$('a[href*=#]').on('click', function(e) {
@@ -119,9 +131,40 @@ $(function() {
 	});
 });
 
+
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      4000);
+});
+
+
+
+
+$(document).ready(function(){
+  var isWebkit = navigator && navigator.userAgent.match(/webkit/i);
+  var $root = $(isWebkit ? 'body' : 'html');
+  var elements = $('div'), elcount = elements.length;
+  var scrolling = false;
+  // Replacing the CSS attr(... url)
+  elements.css('background-image', function(i){
+    return 'url('+$(this).data('img')+')';
+  });
+ 
+  
+});
+
+function myFunction(x) {
+    x.classList.toggle("burgerchange");
+}
+
+
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 500) {
+  if (y > 800) {
     $('.bottomUp').fadeIn();
   } else {
     $('.bottomUp').fadeOut();
@@ -129,8 +172,47 @@ $(document).scroll(function() {
 });
 
 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 600) {
+    $('.hideNavbar').fadeOut();
+  } else {
+    $('.hideNavbar').fadeIn();
+  }
+});
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+ for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
 </script>
-
-
 </body>
 </html>
