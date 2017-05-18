@@ -6,14 +6,17 @@
 <link rel="stylesheet" href="/stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/img/favicon.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&amp;subset=latin-ext" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Hind:300,400" rel="stylesheet"> 
-<style>
-	a, body, footer {font-family:Roboto;}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>@font-face {
+       font-family: "moderat";
+       src: url("Moderat-Regular.woff") format('woff');
+       }
+
+	a, footer, body {font-family:roboto;}
 
 	img {margin-bottom: 4px;}
-
 
 	@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
 
@@ -24,6 +27,22 @@
  	 .prev, .next,.text {font-size: 11px}
 	}
 
+
+	#videobereich1 {
+    background-color: black;
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}	
+.videoExtern {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 	.bottomUp {
   	position: fixed;
   	display: none;
@@ -31,10 +50,12 @@
 }
 
 
+@media (max-width:600px) {.bottomUp{left: 75%; top: 80%}}
+@media (min-width:600px) {.bottomUp{left: 91%; top: 80%}}
+
 
 </style>
 <body class="black">
-
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block card animate-top wide hide-medium hide-large" style="display:none;" id="mySidebar">
@@ -47,7 +68,7 @@
 
 
 <!-- Navbar (sit on top) -->
-<div class="top hideNavbar hide-medium hide-large">
+<div class="top hideNavbar hide-medium hide-large" style="z-index: 500;">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
     	<a href="/index.html" class="bar-item button text-white hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
@@ -59,9 +80,9 @@
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
-  	<span class="burgerspan1"></span>
-  	<span class="burgerspan2"></span>
-  	<span class="burgerspan3"></span>
+  	<span class="burger1"></span>
+  	<span class="burger2"></span>
+  	<span class="burger3"></span>
     	</div>
 	</a>
   </div>
@@ -88,34 +109,31 @@
   </div>
 </div>
 
-
 <!-- NavUp (sit on bottom) -->
-<div class="bottom bottomUp" style="padding-right:20px">
-  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+<div class="bottomUp" style="padding-right:20px">
   <section id="backtotop" class="demo2">
     	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
 </section>
- </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
-      <div class="burgermenu" style="margin-top:10px">
-    	</div>
 	</a>
   </div>
 </div>
 
 
-<section id="section07" class="demo">
+<section id="section06" class="demo">
 	<a href="#section03"><span></span></a>
 </section>
 
 
-<div class="content margin-top;" style="font-family: Roboto;">
+
+  <div class="content margin-top;" style="font-family: roboto;">
   <div id="section03" style="max-width:1200px" class=row-padding display-middle">
 	</br></br>
-  
+  </div> 
+
 <div class="content margin-top;" style="font-family: Roboto;">
 	<div class=row-padding display-middle">
-	</br></br></br></br>
+	</br></br></br></br></br></br></br></br></br>
    </div>
 </div>
 
@@ -143,7 +161,7 @@
 	  <p style="font-weight: 300;">An interactive installation treating the capabilities of one of the world‘s most complex and fascinating sytems - the human brain.</p>
         </div> 
 	<div class="container wide text-grey">
-          <p style="font-style: italic; font-weight: 300;">eine interaktive Installation, die eines der wohl komplexesten und zugleich faszinierendsten Systeme der Welt zum Thema hat - das menschliche Gehirn.</p>
+          <p style="font-style: italic; font-weight: 300;">Eine interaktive Installation, die eines der wohl komplexesten und zugleich faszinierendsten Systeme der Welt zum Thema hat - das menschliche Gehirn.</p>
         </div> 
       </div>
 </div>
@@ -152,20 +170,22 @@
 
 <div class="content margin-top;" style="font-family: Roboto;">
 	<div class=row-padding display-middle">
-	</br></br></br></br>
+	</br></br></br></br></br></br></br>
    </div>
 </div>
 
 <div class="center slideshow-container-2">
-		<img alt="cerebrum" src="/img/cerebrum.jpg" style="width:98%">
+		<img alt="cerebrum" src="/img/cerebrum.gif" style="width:98%">
 
  </div>
 
 
-<div class="content margin-top;" style="font-family: Roboto;">
-	<div class=row-padding display-middle">
-	</br></br></br></br>
-   </div>
+<div id="cerebrumVideo">	
+<iframe class="videoExtern" src="https://player.vimeo.com/video/218033107?color=111&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+</div>
+
+<div class="display-container content wide" style="max-width:1500px;">
+ </br> </br> </br> </br> </br></br></br></br> 
 </div>
 
 
@@ -173,6 +193,8 @@
 <footer class="center bar invisible wide padding-24 text-white" style="font-family:roboto; font-weight:300; font-size:16px">
  <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
 </footer>
+
+
 
 <script>
 // Toggle between showing and hiding the sidebar when clicking the menu icon
