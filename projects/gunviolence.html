@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/img/favicon.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&amp;subset=latin-ext" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <style>@font-face {
@@ -50,6 +50,9 @@
 }
 
 
+@media (max-width:600px) {.bottomUp{left: 75%; top: 80%}}
+@media (min-width:600px) {.bottomUp{left: 91%; top: 80%}}
+
 
 </style>
 <body class="black">
@@ -65,7 +68,7 @@
 
 
 <!-- Navbar (sit on top) -->
-<div class="top hideNavbar hide-medium hide-large">
+<div class="top hideNavbar hide-medium hide-large" style="z-index: 500;">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
     	<a href="/index.html" class="bar-item button text-white hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
@@ -77,9 +80,9 @@
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
       <div class="burgermenu" style="margin-top:10px">
-  	<span class="burgerspan1"></span>
-  	<span class="burgerspan2"></span>
-  	<span class="burgerspan3"></span>
+  	<span class="burger1"></span>
+  	<span class="burger2"></span>
+  	<span class="burger3"></span>
     	</div>
 	</a>
   </div>
@@ -107,15 +110,11 @@
 </div>
 
 <!-- NavUp (sit on bottom) -->
-<div class="bottom bottomUp" style="padding-right:20px">
-  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+<div class="bottomUp" style="padding-right:20px">
   <section id="backtotop" class="demo2">
     	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
 </section>
- </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
-      <div class="burgermenu" style="margin-top:10px">
-    	</div>
 	</a>
   </div>
 </div>
@@ -204,8 +203,8 @@
 
 
 
-<footer class="center bar invisible wide padding-24 text-white" style="font-family:roboto; font-weight:300; font-size:16px" >
- <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
+<footer class="center bar invisible wide padding-24 text-white" style="font-weight:300;">
+ <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide hover-grey" style="font-size:16px; text-decoration: none;" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a> </br></br> <a class ="small" style="text-decoration: none;" href="https://github.com/emmaschuepfer/emmaschuepfer.github.io"> hosted on GitHub Pages </a></p>
 </footer>
 
 

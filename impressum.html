@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>Emma Schüpfer > Impressum</title>
+<title>Emma Schüpfer — Impressum</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="/img/favicon.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&amp;subset=latin-ext" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -40,7 +40,7 @@
 
 
 <!-- Navbar (sit on top) -->
-<div class="top hideNavbar hide-medium hide-large">
+<div class="top hideNavbar hide-medium hide-large" style="z-index: 500;">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
     	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left">EMMA SCHÜPFER</a>
@@ -175,7 +175,7 @@ $(document).scroll(function() {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 600) {
+  if (y > 100) {
     $('.hideNavbar').fadeOut();
   } else {
     $('.hideNavbar').fadeIn();
