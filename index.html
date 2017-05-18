@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+<link rel="icon" type="image/png" href="/img/favicon.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <style>
@@ -18,11 +19,15 @@
 }
 
 
+.body{cursor: crosshair;}
+
 .word{
   display: flex!important;
   margin: auto!important;
   font: 700 normal 4em/1.5 'Roboto',sans-serif;
   color: white;
+  font-size: 64px;
+  font-weight: 500;
 }
 
 #welcome {display:flex!important; height:80%;}
@@ -39,6 +44,9 @@
 .mytext {max-width: 92%;}
 }
 
+.projectsimg {margin-bottom:11px!important;}
+
+
 
 @media (max-width: 580px) {
 #section01 { background: url(/img/title_banner.jpg) center center / cover no-repeat; border: 32px solid white; border-top: 64px solid white;border-bottom: none;}
@@ -46,7 +54,6 @@
 }
 
 @media (min-width: 581px) {
-.projectsimg {margin-bottom:11px;}
 #section01 { background: url(/img/index_banner_1.jpg) center center / cover no-repeat;  border: 32px solid white; border-top: 64px solid white;border-bottom: none;}
 
 }
@@ -75,6 +82,8 @@ html, body
   z-index: 1;
 }
 
+@media (max-width:600px) {.bottomUp{left: 75%; top: 80%}}
+@media (min-width:600px) {.bottomUp{left: 91%; top: 80%}}
 
 
 </style>
@@ -92,7 +101,7 @@ html, body
 
 
 <!-- Navbar (sit on top) -->
-<div class="top hideNavbar hide-medium hide-large">
+<div class="top hideNavbar hide-medium hide-large" style="z-index: 500;">
   <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
 	<div class="wider">
     	<a href="/index.html" class="bar-item button text-dark-grey hover-grey animate-top margin-left" style="font-family:roboto; font-weight:400;">EMMA SCHÜPFER</a>
@@ -103,7 +112,7 @@ html, body
      	<a href="/about.html" class="bar-item button text-dark-grey hover-grey animate-top-3 margin-right">about</a>
     </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top" onclick="w3_open(), myFunction(this)">
-      <div class="burgermenu" style="margin-top:10px">
+      <div class="burgermenu" style="margin-top:10px; z-index:100;">
   	<span class="burgerspan1"></span>
   	<span class="burgerspan2"></span>
   	<span class="burgerspan3"></span>
@@ -134,29 +143,25 @@ html, body
 </div>
 
 
-<section id="section01"class=" demo">
+<section id="section01"class=" demo1">
 	<div id="welcome" style="display:flex!important;"><div class="word"></div></div>
 	<a href="#section03"><span></span></a>
 </section>
 
 
 <!-- NavUp (sit on bottom) -->
-<div class="bottom bottomUp" style="padding-right:20px">
-  <div class="bar invisible wide padding-24 margin-top" id="myNavbar">
+<div class="bottomUp" style="padding-right:20px">
   <section id="backtotop" class="demo2">
     	<a href="#section03" class="bar-item button text-grey hover-grey right"><span></span> </a>
 </section>
- </div>
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium margin-right animate-top"">
-      <div class="burgermenu" style="margin-top:10px">
-    	</div>
 	</a>
   </div>
 </div>
 <div id="section03"> </br> </br> </br></br></br></div>
  
 
-<div class="text-dark-grey padding wide-2 line" style="margin: auto; font-size: 20px; font-weight:300;" >My name is Emma. I'm a communication design student and this is my portfolio. Have a look!</div>
+<div class="text-dark-grey padding wide-2 line" style="margin: auto; font-size: 20px; font-weight:300;" >My name is Emma. I'm a communication design student and this is my portfolio. Please have a look!</div>
 
 
 <div class="mytext" style="height:2px;margin-top:40px;margin-bottom:50px; margin: auto; background-color:grey;"></div>
@@ -215,6 +220,16 @@ html, body
 	</div>
 </div>
 <div class="row-padding text-dark-grey big wide">
+
+	<div class="twothird container">
+      
+	<div class="display-container" >
+		<a href="/projects/cerebrum.html"> 
+		<img class="padding-medium" alt="cerebrum" src="/img/cerebrum_preview_2.jpg" style="width:100%">
+		<span class="display-topmiddle display-hover">CEREBRUM</br><span class="small">Interactive Design</span> </span>
+	</div>
+     </div>
+
 	<div  class="third container">    
       
 	<div class="display-container">
@@ -224,38 +239,17 @@ html, body
 		<span class="display-topmiddle display-hover">WÖRTER;</br><span class="small">Typography</span> </span>
 		</a>
 	   </div>
-		<div class ="projectsimg"></div>
+		<div class ="projectsimg"></br></div>
+		<div class= "hide-small"></br></br></div>
 	</div>
-      
-     </div>
-	<div class="third container">
-      
-	<div class="display-container" >
-		<a href="/projects/cerebrum.html"> 
-		<img class="padding-medium" alt="cerebrum" src="/img/cerebrum_preview.jpg" style="width:100%">
-		<span class="display-topmiddle display-hover">CEREBRUM</br><span class="small">Interactive Design</span> </span>
-	</div>
-     </div>
-    	<div class="third container">
-     
-	<div class="display-container">
-		<a href="index - Kopie.html"> 
-		<img class="padding-medium" alt="neu" src="-" style="width:100%">
-		<span class="display-topmiddle display-hover">neu</span>
-		</a>
-	</div>
-    
      </div>
 </div>
 </div>
 
 
 
-</br></br>
-
-
-<footer class="center bar invisible wide padding-24 text-dark-grey" style="font-weight:300">
- <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide" style="font-size:16px" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a></p>
+<footer class="center bar invisible wide padding-24 text-dark-grey" style="font-weight:300;">
+ <p><a class="hide-small">  Emma Schüpfer | </a><a class="wide hover-grey" style="font-size:16px; text-decoration: none;" href="mailto:hello@emmaschuepfer.de?subject=hello">hello@emmaschuepfer.de</a> </br></br> <a class ="small" style="text-decoration: none;" href="https://github.com/emmaschuepfer/emmaschuepfer.github.io"> hosted on GitHub Pages </a></p>
 </footer>
 
 <script>
@@ -407,7 +401,29 @@ $(document).ready(function(){
 
 
 
-!function(t){"use strict";var a=t("[data-slides]"),ni=0,s=a.data("slides"),e=s.length,n=function(){if(ni>=a.length){ni=0}else{ni++};a.css("background-image",'url("'+s[ni]+'")').show(0,function(){setTimeout(n,5e3)})};n()}(jQuery);
+
+/*!
+ * By Eharry.me (https://gist.github.com/Ema4rl/b8ef90be99205ddada5ef2cd6e632ebe)
+ */
+ ! function ($) {
+    "use strict";
+    var slide = $("[data-slides]"),
+        count = 0,
+        slides = slide.data("slides"),
+        len = slides.length,
+        n = function () {
+            if (count >= len) {
+                count = 0
+            }
+            slide.css("background-image", 'url("' + slides[count] + '")').show(0, function () {
+                setTimeout(n, 5e3)
+            });
+            count++;
+        };
+    n()
+}(jQuery);
+
+
 
 
 
