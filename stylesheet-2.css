@@ -1,0 +1,28 @@
+body {
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+}
+p{
+  font-weight: 200;
+  font-size: 2.5vw;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  font-weight: 400;
+  font-size: 2.55vw;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
